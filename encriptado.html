@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="=utf-8"><!--diccionariob tildes-->
+        <meta name="viewport" content="width=device-width">
+        <title>Challenge ONE Encriptado de texto</title>
+        <link rel="stylesheet" href="encrip.css"><!--style hoja de estilo y ruta-->
+        <link rel="stylesheet" href="reset.css">
+        
+    </head>
+        
+    <body>
+       
+     <div class="todo">
+        <div class="titulo">
+            <h2 >ENCRIPTADOR</h2>
+        </div>
+        
+        <div class="caja"><!--separacion en las esquinas-->
+            <h1><img id="logo" src="vectorA.png" alt="logoDeLaPagina"></h1>
+        </div>
+
+        <textarea autofocus class="text"  id="text" placeholder="Ingrese el texto"onkeydown="return /[a-z,0-9 ]/g.test(event.key)"></textarea>
+        
+        <div class="rec">
+            <p class="resultado" id="resultado"></p>
+        </div>
+        
+        <div class="peques">
+            <img id="bi" src="bi.png">
+            <p id="solo">Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="botones">
+            <button id="encriptar" onclick="resolver(1)">Encriptar</button>
+            <button id="desencriptar" onclick="resolver(0)">Desencriptar</button>
+        </div>
+       
+         <aside>
+            <div id="sinTexto">
+                 <img id="muc" src="muneco.png">
+                    <div class="textoo">
+                        <p id="nin"><strong>Ningún mensaje fue encontrado</strong></p>
+                        <p id="ing">Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                 <button class="btn claro" id="copiar" onclick="copiar()">Copiar</button>
+             </div>
+            
+         </aside>
+        
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Press+Start+2P&display=swap');
+        </style>
+
+         <h2 id="yo" class="copy">&copy; Angie Galviz</h2>
+         <a id="link" href="https://www.linkedin.com/in/angiegalviz/" ><img  width="25px" src="images.png" alt="icono-github"></a>
+         
+     </div>
+     
+        <script src="encrip.js"></script>  
+       
+    </body>
+    
+</html>
