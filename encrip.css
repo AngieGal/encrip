@@ -276,3 +276,9 @@ aside  {/*revisar*/
     left: 421px;
     top:970px;
 }
+
+#hub{
+    position: absolute;
+    left: 690px;
+    top: 971px;
+}
